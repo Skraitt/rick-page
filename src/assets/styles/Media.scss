@@ -1,0 +1,67 @@
+@import './Vars.scss';
+@media screen and (max-width: 745px) {
+  .header{
+    &--logo{
+      width: 200px;
+      height: 80px;
+    }
+    &__menu{
+      &__list{
+        position: fixed;
+        width: 100vw;
+        height: calc(100vh - 80px);
+        background: linear-gradient($blueTone,$greenTone);
+        top: -100vh;
+        left: 0px;
+        text-align: center;
+        transition: .4s;
+        flex-direction: column;
+        overflow: scroll;
+        padding: 0px;
+      }
+      &__item{
+        margin: 30px 0px 0px 0px;
+        line-height: 30px;
+        &--a{
+          margin: 5px 0 0 0;
+          font-size: 20px;
+          color: white;
+          font-weight: bold;
+        }
+        &:hover{
+          background: none;
+        }
+      }
+      &__movil{
+        display: inline-flex;
+      }
+    }
+  }
+  .lorem{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__text{
+      width: 300px;
+      text-align: center;
+      margin: 0;
+    }
+    &--img{
+      height: 300px;
+    }
+  }
+  .search{
+    &__box{
+      top: 689px;
+    }
+  }
+  .footer{
+    height: 80px;
+    &--item{
+      text-align: center;
+      width: 33%;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+}

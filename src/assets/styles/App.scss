@@ -1,0 +1,13 @@
+@import './Vars.scss';
+@import './Media.scss';
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: $theme-font;
+}
+
+.main {
+  background: linear-gradient($blueTone,$greenTone);
+  min-height: calc(100vh - 130px);
+}

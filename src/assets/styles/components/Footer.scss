@@ -1,0 +1,17 @@
+@import '../Vars.scss';
+
+.footer{
+  background-color: $greenTone;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  &--item{
+    text-decoration: none;
+    color: white;
+    &:hover{
+      text-decoration: underline;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import '../Vars.scss';
+
+.header {
+  background-color: $blueTone;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80px;
+  align-items: center;
+  &--logo{
+    height: inherit;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  &__menu {
+    &__list{
+      display: flex;
+      list-style: none;
+      margin-right: 30px;
+    }
+    &__item{
+      margin: 0 10px;
+      &--a{
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        letter-spacing: 2px;
+        padding: 7px 13px;
+        font-size: 20px;
+        display: block;
+      }
+      &--a:hover{
+        transition: .3s;
+        background-color: rgba(0, 0, 0, .3);
+        font-weight: bold;
+      }
+    }
+    &__movil{
+      margin-right: 30px;
+      font-size: 25px;
+      color: white;
+      cursor: pointer;
+      display: none;
+    }
+  }
+}
+
+ul.show {
+  top: 65px;
+}
